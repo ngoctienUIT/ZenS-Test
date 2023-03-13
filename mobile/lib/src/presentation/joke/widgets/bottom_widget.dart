@@ -12,12 +12,15 @@ class BottomWidget extends StatelessWidget {
         children: const [
           Divider(),
           Text(
-            "This appis created as part of Hlsolutions program. The materials con- tained on this website are provided for general information only and do not constitute any form of advice. HLS assumes no responsibility for the accuracy of any particular statement and accepts no liability for any loss or damage which may arise from reliance on the infor- mation contained on this site.",
+            "This website is created as part of Hlsolutions program. The materials contained on this website are provided for general information only and do not constitute any form of advice. HLS assumes no responsibility for the accuracy of any particular statement and accepts no liability for any loss or damage which may arise from reliance on the information contained on this site.",
             textAlign: TextAlign.center,
-            style: TextStyle(color: Colors.grey),
+            style: TextStyle(color: Color(0xff9E9E9E)),
           ),
           SizedBox(height: 10),
-          Text("Copyright 2021 HLS", style: TextStyle(fontSize: 16))
+          Text(
+            "Copyright 2021 HLS",
+            style: TextStyle(fontSize: 16, color: Color(0xff646464)),
+          )
         ],
       ),
     );

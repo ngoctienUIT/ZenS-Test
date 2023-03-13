@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jokee/src/presentation/joke/screen/joke_page.dart';
+
+import 'src/presentation/joke/screen/joke_page.dart';
 
 void main() {
   runApp(const MyApp());

@@ -15,8 +15,14 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: const [
-              Text("Handcrafted by", style: TextStyle(color: Colors.grey)),
-              Text("Ngọc Tiến"),
+              Text(
+                "Handcrafted by",
+                style: TextStyle(color: Color(0xffA0A0A0)),
+              ),
+              Text(
+                "Jim HLS",
+                style: TextStyle(color: Color(0xff4E4E4E)),
+              ),
             ],
           ),
           const SizedBox(width: 10),
@@ -25,6 +31,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
               "assets/images/avatar.jpg",
               height: 45,
               width: 45,
+              fit: BoxFit.cover,
             ),
           ),
           const SizedBox(width: 10),

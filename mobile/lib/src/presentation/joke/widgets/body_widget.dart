@@ -19,10 +19,10 @@ class BodyWidget extends StatelessWidget {
         children: [
           Text(
             jokes[index],
-            style: const TextStyle(color: Color(0xff656565)),
+            style: const TextStyle(color: Color(0xff6A6A6A)),
             textAlign: TextAlign.justify,
           ),
-          if (index < 4)
+          if (index < jokes.length - 1)
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../data/jokes.dart';
 import '../widgets/appbar_widget.dart';
 import '../widgets/body_widget.dart';
 import '../widgets/bottom_widget.dart';
@@ -27,17 +28,16 @@ class _JokePageState extends State<JokePage> {
             child: BodyWidget(
               index: index,
               onPress: (isFunny) {
-                if (index < 4) {
+                if (index < jokes.length - 1) {
                   isFunnyList[index] = isFunny;
                   setState(() => index++);
                 }
               },
             ),
           ),
-          const SizedBox(height: 170),
+          const BottomWidget(),
         ],
       ),
-      bottomSheet: const BottomWidget(),
     );
   }
 }
